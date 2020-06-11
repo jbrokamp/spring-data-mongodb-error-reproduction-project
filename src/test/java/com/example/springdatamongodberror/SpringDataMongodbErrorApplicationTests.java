@@ -15,7 +15,7 @@ class SpringDataMongodbErrorApplicationTests {
     private ObjectExtendsAbstractClassRepository repository;
 
     @Test
-    void documentBasedOnAbstractClassThrows() {
+    void shouldSave() {
         repository.save(new ExtendedObject());
     }
 }
